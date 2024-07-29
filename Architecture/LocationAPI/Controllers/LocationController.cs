@@ -64,7 +64,7 @@ namespace LocationAPI.Controllers
                 activity?.SetTag("messaging.destination", string.Empty);
                 activity?.SetTag("messaging.rabbitmq.routing_key", QueueType.Processing);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 var t = ex.Message;
             }
